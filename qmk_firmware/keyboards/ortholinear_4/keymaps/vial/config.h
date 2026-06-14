@@ -1,0 +1,16 @@
+#pragma once
+
+#define VIAL_KEYBOARD_UID {0x73, 0x28, 0x35, 0xad, 0xff, 0x92, 0xdf, 0x3f}
+#define VIAL_TAP_DANCE_ENTRIES 8
+#define VIAL_COMBO_ENTRIES 8
+#define PICO_FLASH_SIZE_BYTES (1 * 1024 * 1024)
+
+#ifdef AUTO_KDK_TRACKPAD_ENABLED
+    #define I2C_DRIVER I2CD1
+    #define I2C1_SDA_PIN GP18
+    #define I2C1_SCL_PIN GP19
+    
+    #define AZOTEQ_IQS7211E_RDY_PIN 21
+#endif // AUTO_KDK_TRACKPAD_ENABLED
+ 
+#define MOUSE_EXTENDED_REPORT
